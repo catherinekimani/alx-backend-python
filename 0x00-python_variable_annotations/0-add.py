@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-""" type annotation func add """
+"""
+Type-annotated func
+"""
 
 
 def add(a: float, b: float) -> float:
-    """ Return sum """
+    """Add two floats and return their sum """
     return a + b
