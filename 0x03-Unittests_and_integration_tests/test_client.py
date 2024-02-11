@@ -71,6 +71,7 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
     """ TestIntegrationGithubOrgClient class """
     @classmethod
     def setUpClass(cls):
+        """ setUpClass for integration testing """
         cls.get_patcher = patch("requests.get")
         cls.mock_get = cls.get_patcher.start()
 
