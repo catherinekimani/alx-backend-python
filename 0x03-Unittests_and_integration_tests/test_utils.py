@@ -49,6 +49,7 @@ class TestGetJson(unittest.TestCase):
 class TestMemoize(unittest.TestCase):
     """ TestMemoize class """
     def test_memoize(self) -> None:
+        """ test_memoize"""
         class TestClass:
             """ TestClass """
             def a_method(self):
@@ -59,6 +60,7 @@ class TestMemoize(unittest.TestCase):
             def a_property(self):
                 """ a_property """
                 return self.a_method()
+
         with patch.object(TestClass, "a_method", return_value=42) as mocked:
             tets_class = TestClass()
             self.assertEqual(tets_class.a_property, 42)
